@@ -62,3 +62,14 @@ new_data = pd.DataFrame({
 # Make predictions
 predictions = model.predict(new_data)
 print(predictions)
+
+##Dependencies
+To run the code and use the model, you need to install the following Python packages:
+
+bash
+Copy
+pip install lightgbm pandas scikit-learn
+##License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions, please contact the repository owner.
