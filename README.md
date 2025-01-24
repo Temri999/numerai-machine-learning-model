@@ -6,8 +6,8 @@ This repository contains a machine learning model trained on the Numerai dataset
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Model](#model)
-- [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Usage](#usage)
 - [License](#license)
 
 ## Overview
@@ -40,6 +40,14 @@ The model in this repository is a LightGBM regressor (`LGBMRegressor`) trained o
 ### Model File
 - `hello_numerai.pkl`: The serialized model file containing the trained LightGBM regressor.
 
+## Dependencies
+
+To run the code and use the model, you need to install the following Python packages:
+
+```bash
+pip install lightgbm pandas scikit-learn
+```
+
 ## Usage
 
 To use the model, you need to load the `.pkl` file and make predictions on new data. Below is an example of how to load the model and make predictions:
@@ -62,14 +70,14 @@ new_data = pd.DataFrame({
 # Make predictions
 predictions = model.predict(new_data)
 print(predictions)
+```
 
-##Dependencies
-To run the code and use the model, you need to install the following Python packages:
+## License
 
-bash
-Copy
-pip install lightgbm pandas scikit-learn
-##License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
 
 Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions, please contact the repository owner.
+```
+
